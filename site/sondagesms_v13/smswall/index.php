@@ -4,15 +4,15 @@
 
 $page = $_SERVER['PHP_SELF'];
 $sec = "10";
-header("Refresh: $sec; url=$page#details");
+// header("Refresh: $sec; url=$page#details");
 
 
 //Connexion à la base de données
 $nombre_mess=0;
 $mysql_hostname = "localhost";
-$mysql_user     = "sondagesms";
-$mysql_password = "";
-$mysql_database = "sondagesms";
+$mysql_user     = "root";
+$mysql_password = "root";
+$mysql_database = "smswall";
 $titre="";
 $bd             = mysql_connect($mysql_hostname, $mysql_user, $mysql_password) or die("Oops quelque chose ne s'est pas passé comme il faut");
 mysql_select_db($mysql_database, $bd) or die("Oops quelque chose ne s'est pas passé comme il faut");
@@ -80,7 +80,8 @@ $titre=mysql_query("SELECT titre FROM smswall ORDER BY ID DESC LIMIT 0, 1");
 <?php	
 if ($data = mysql_fetch_assoc($titre)) {
     // on affiche le titre
-    echo "<h2>".$data['titre']."</h2>";
+     echo "<h2>".$data['titre']."</h2>";
+    // echo "<h2>".$data['titre']."</h2>";
     }
 	else {
   echo "<h2>Il n'y a pas de sondage existant pour l'instant</h2>";

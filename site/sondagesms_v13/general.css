@@ -23,9 +23,11 @@ hr { height: 1px; background: #919191; margin: 2em 0; }
 /*   BANDEAU SUPERIEUR   */
 /*************************/
 
-#bandeau { position: fixed; width: 100%; height: 25px; line-height: 25px; vertical-align: middle; }
+#bandeau { position: fixed; width: 100%; height: 70px; line-height: 25px; 
+	/*vertical-align: middle;*/
+	 }
 #bandeau a { display: block; float: left; width: 80px; text-align: right; height: 25px; line-height: 25px; vertical-align: middle; }
-h1 { font-size: 1em; font-weight: bold; font-style: italic; color: #919191; text-align: center; }
+h1 { font-size: 1.6em; font-weight: bold; font-style: bold; color: #383838; text-align: center; padding-top: 25px;}
 
 
 
@@ -33,7 +35,9 @@ h1 { font-size: 1em; font-weight: bold; font-style: italic; color: #919191; text
 /*   BANDEAU INFERIEUR   */
 /*************************/
 
-#mention { background-color: #313131; width: 100%; height: 25px; line-height: 25px; vertical-align: middle; font-size: .8em; font-style: italic; color: #919191; text-align: center;  }
+#mention { 
+	/*background-color: #313131;*/
+	width: 100%; height: 25px; line-height: 25px; vertical-align: middle; font-size: .8em; font-style: italic; color: #919191; text-align: center;  }
 #mention img { margin-right: 20px; }
 #mention a { font-style: italic; font-weight: normal; }
 #mention a:hover, #mention a:focus, #mention a:active { color: #fff; }
@@ -44,14 +48,14 @@ h1 { font-size: 1em; font-weight: bold; font-style: italic; color: #919191; text
 /*        CADRES        */
 /************************/
 
-#page { margin: 0 auto; width: 600px; min-height: 94%; background-color: rgba(255,255,255,0.3); overflow: hidden; padding: 25px; }
+#page { margin: 0 auto; width: 600px; min-height: 94%; background-color: #cbcbcb; overflow: hidden; padding: 25px; }
 
 #qrcode { position: fixed; width: 100px; margin-left: 30px; margin-top: 200px; font-size:.8em; text-align: center; line-height:1.3em; }
 #qrcode li { margin-top: 2em;}
 #qrcode a, #qrcode a:visited, #qrcode a:link { color: #000; }
 #qrcode a:hover, #qrcode a:focus, #qrcode a:active { color: #313131; }
 
-h2 { width:580px; margin-top: 30px; padding: 25px 10px; box-shadow: 0 5px 3px rgba(0, 0, 0, 0.4); -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; font-size: 1.3em; font-weight: bold; text-align: center; }
+h2 { width:580px; margin-top: 80px; padding: 15px 10px; box-shadow: 0 5px 3px rgba(0, 0, 0, 0.4); -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; font-size: 1.2em; font-weight: bold; text-align: center; }
 
 
 /**************************/
@@ -63,13 +67,15 @@ a, a:visited, a:link { font-weight: bold; color: #919191; }
 a:hover, a:focus, a:active { color: #000; text-decoration: underline; }
 
 /* Couleur et image du fond de la page */
-body { background: #dbf836 url(background.jpg) fixed repeat-x left 25px; }
+body { background-color: #f8e2b7;
+/*background:  url(background.jpg) fixed repeat-x left 25px;*/
+ }
 
 /* Logo Petits Deb + fond du bandeau */
-#bandeau { background: #313131 url(apd.png) no-repeat right center; }
+#bandeau { background: #8d8d8d url(apd.png) no-repeat right center; }
 
 /* Titre */
-h2 { background-color: #000; color: #fff; }
+h2 { background-color: #dca995; color: #fff; }
 
 
 
@@ -78,16 +84,16 @@ h2 { background-color: #000; color: #fff; }
 /*******************/
 
 /*  Acceder au nuage  */
-#voirnuage { display: block; width: 50%; background-color: #313131; color: #fff; margin: 80px auto 10px auto; padding: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; font-size: .8em; text-align: center; }
+#voirnuage { display: block; width: 50%; background-color: #dca995; color: #fff; margin: 80px auto 10px auto; padding: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; font-size: .8em; text-align: center; }
 a#voirnuage, a#voirnuage :visited, a#voirnuage:link  { color: #fff; }
 
 /*  Messages  */
 #messages { margin-top: 180px; }
-#messages p { background-color: #fff; border: 1px solid #bdbdbd; margin-top: 20px; padding: 10px; font-size: 1em; line-height: 1.5em; font-weight: bold; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; }
+#messages p { background-color: #fff; border: 1px solid #bdbdbd; margin-top: 20px; padding: 10px; font-size: 0.9em; line-height: 1.5em; font-weight: normal; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; }
 #details { background-color: #919191; color: #fff; margin-top: 50px; padding: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; font-size: .9em; font-weight: bold; text-align: center; }
 
 /*  Cacher les messages  */
-#cache { position: fixed; width:600px; height:25px; background-color: #d3e673; }
+/*#cache { position: fixed; width:600px; height:25px; background-color: #d3e673; }*/
 
 
 
